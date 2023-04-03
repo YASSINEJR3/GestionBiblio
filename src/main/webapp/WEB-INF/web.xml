@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>page-livre</servlet-name>
+        <jsp-file>/WEB-INF/GestionLivre/pagePrincipale.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-livre</servlet-name>
+        <url-pattern>/livres</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>page-adherent</servlet-name>
+        <url-pattern>/adherents</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>page-adherent</servlet-name>
+        <jsp-file>/WEB-INF/GestionAdherent/pagePrincipale.jsp</jsp-file>
+    </servlet>
+
+    <servlet>
+        <servlet-name>page-addlivre</servlet-name>
+        <jsp-file>/WEB-INF/GestionLivre/addLivre.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-addlivre</servlet-name>
+        <url-pattern>/addlivre</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>page-modifylivre</servlet-name>
+        <jsp-file>/WEB-INF/GestionLivre/modifyLivre.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-modifylivre</servlet-name>
+        <url-pattern>/modifyLivre</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>page-addadherent</servlet-name>
+        <jsp-file>/WEB-INF/GestionAdherent/addAdherent.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-addadherent</servlet-name>
+        <url-pattern>/addAdherent</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>page-addemprunt</servlet-name>
+        <jsp-file>/WEB-INF/GestionEmprunt/addEmprunt.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-addemprunt</servlet-name>
+        <url-pattern>/addEmprunt</url-pattern>
+    </servlet-mapping>
+    <!--<servlet>
+        <servlet-name>page-login-admin</servlet-name>
+        <jsp-file>/WEB-INF/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-login-admin</servlet-name>
+        <url-pattern>/AdminLogin</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>page-modifyadherent</servlet-name>
+        <jsp-file>/WEB-INF/GestionAdherent/modifyAdherent.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>page-modifyadherent</servlet-name>
+        <url-pattern>/modifyAdherent</url-pattern>
+    </servlet-mapping>
+</web-app>
